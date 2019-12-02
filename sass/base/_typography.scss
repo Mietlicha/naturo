@@ -1,0 +1,40 @@
+body {
+  font-family: 'lato', sans-serif;
+  font-weight: 400;
+  line-height: 1.7;
+  color: $color-grey-dark;
+  padding: 2rem;
+}
+
+.header {
+  &__text {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+
+    &--main {
+      backface-visibility: hidden;
+      margin-bottom: 6rem;
+
+      span {
+        color: $color-white;
+        text-transform: uppercase;
+        display: block;
+      }
+    }
+    &--main span:nth-child(1) {
+      font-size: 6rem;
+      letter-spacing: 3.5rem;
+      animation: moveLeft 1s ease-in-out;
+    }
+
+    &--main span:nth-child(2) {
+      font-size: 2rem;
+      letter-spacing: 1.7rem;
+      font-weight: 700;
+      animation: moveRight 1s ease-in-out;
+    }
+  }
+}
