@@ -1,0 +1,47 @@
+.about__text {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  max-width: 100%;
+  grid-gap: 5rem;
+  text-align: left;
+  margin-left: 10rem;
+}
+
+.feature {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  max-width: 100%;
+  grid-gap: 5rem;
+  text-align: left;
+  align-items: baseline;
+  padding: 20rem 10rem;
+  background: linear-gradient(
+      to right bottom,
+      rgba($color-primary-light, 0.8),
+      rgba($color-primary-dark, 0.8)
+    ),
+    url(../img/nat-4.jpg) top/cover;
+  transform: skewY(-7deg);
+  margin-top: -9rem;
+
+  &__card {
+    transform: skewY(7deg);
+    background-color: rgba($color-white, 0.7);
+    text-align: center;
+    padding: 3rem;
+    border-radius: 0.5rem;
+    transition: transform 0.3s;
+    box-shadow: 0 1rem 2rem rgba($color-black, 0.2);
+
+    &:hover {
+      transform: translateY(-1.5rem) scale(1.03) skewY(7deg);
+      box-shadow: 0 1.5rem 2rem rgba($color-black, 0.3);
+    }
+  }
+}
+
+.tours__card {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 7rem;
+}

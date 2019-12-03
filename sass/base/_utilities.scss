@@ -1,0 +1,16 @@
+.heading {
+  margin-bottom: 8rem;
+}
+
+.fa {
+  font-size: 8rem;
+  margin-bottom: 4rem;
+  color: transparent;
+  background-image: linear-gradient(
+    to right,
+    rgb(126, 213, 111),
+    rgb(40, 180, 133)
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+}
