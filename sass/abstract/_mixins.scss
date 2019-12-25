@@ -37,7 +37,7 @@
 
   @if $breakpoint == big-desktop {
     //powyżej 1200px
-    @media (min-width: 75.1em) {
+    @media (min-width: 90em) {
       @content;
     }
   }

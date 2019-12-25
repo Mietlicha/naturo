@@ -1,5 +1,9 @@
 .heading {
   margin-bottom: 8rem;
+
+  @include respond(phone) {
+    margin-bottom: 3rem;
+  }
 }
 
 .u-margin-top-big {

@@ -5,6 +5,25 @@
   grid-gap: 5rem;
   text-align: left;
   margin-left: 10rem;
+
+  @include respond(phone) {
+    margin-left: 1rem;
+  }
+
+  &--img {
+    @include respond(tab-port) {
+      min-height: 30rem;
+    }
+
+    @include respond(phone) {
+      min-height: 10rem;
+    }
+  }
+
+  @include respond(tab-port) {
+    grid-template-columns: 1fr;
+    grid-gap: 3rem;
+  }
 }
 
 .feature {
@@ -24,6 +43,24 @@
   transform: skewY(-7deg);
   margin-top: -9rem;
 
+  @include respond(big-desktop) {
+    padding: 20rem 3rem;
+  }
+
+  @include respond(tab-land) {
+    padding: 20rem 3rem;
+    grid-gap: 1rem;
+  }
+
+  @include respond(tab-port) {
+    grid-template-columns: 1fr;
+    grid-gap: 3rem;
+  }
+
+  @include respond(phone) {
+    padding: 10rem 0rem;
+  }
+
   &__card {
     transform: skewY(7deg);
     background-color: rgba($color-white, 0.7);
@@ -32,6 +69,13 @@
     border-radius: 0.5rem;
     transition: transform 0.3s;
     box-shadow: 0 1rem 2rem rgba($color-black, 0.2);
+    min-width: 18rem;
+
+    width: 100%;
+
+    @include respond(big-desktop) {
+      max-width: 40rem;
+    }
 
     &:hover {
       transform: translateY(-1.5rem) scale(1.03) skewY(7deg);
@@ -44,4 +88,12 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 7rem;
+
+  @include respond(tab-land) {
+    grid-gap: 1rem;
+  }
+  @include respond(tab-port) {
+    grid-template-columns: 1fr;
+    grid-gap: 3rem;
+  }
 }
