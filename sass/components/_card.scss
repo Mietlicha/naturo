@@ -1,0 +1,206 @@
+.card {
+  perspective: 160rem;
+  -moz-perspective: 160rem;
+  text-align: left;
+  position: relative;
+  height: 55rem;
+
+  @include respond(tab-land) {
+    height: 50rem;
+    margin-bottom: 20rem;
+  }
+
+  &__side {
+    height: 55rem;
+    transition: transform 0.8s ease;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    backface-visibility: hidden;
+    border-radius: 3px;
+    box-shadow: 0 1.5rem 4rem rgba($color-black, 0.4);
+    overflow: hidden;
+
+    @include respond(tab-land) {
+      // height: 50rem;
+      position: static;
+    }
+
+    &--front {
+      background-color: $color-white;
+
+      @include respond(tab-land) {
+        height: 50rem;
+        position: static;
+      }
+    }
+
+    &--back {
+      transform: rotateY(180deg);
+      text-transform: uppercase;
+      color: $color-white;
+      text-align: center;
+
+      @include respond(tab-land) {
+        transform: rotateY(0);
+        height: 20rem;
+      }
+
+      &-text {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+        p:nth-child(1) {
+          font-size: 1.4rem;
+        }
+        p:nth-child(2) {
+          font-size: 6rem;
+          font-weight: 100;
+          margin-bottom: 6rem;
+
+          @include respond(tab-land) {
+            font-size: 4rem;
+            margin-bottom: 1.7rem;
+          }
+        }
+      }
+      &-1 {
+        background: linear-gradient(
+          to bottom right,
+          $color-secondary-dark,
+          $color-secondary-light
+        );
+      }
+
+      &-2 {
+        background: linear-gradient(
+          to bottom right,
+          $color-primary-dark,
+          $color-primary-light
+        );
+      }
+
+      &-3 {
+        background: linear-gradient(
+          to bottom right,
+          $color-tertiary-dark,
+          $color-tertiary-light
+        );
+      }
+    }
+  }
+
+  &:hover &__side--front {
+    transform: rotateY(180deg);
+
+    @include respond(tab-land) {
+      transform: rotateY(0);
+    }
+  }
+  &:hover &__side--back {
+    transform: rotateY(0);
+  }
+
+  &__picture {
+    background-size: cover;
+    height: 23rem;
+    background-blend-mode: screen;
+    -webkit-clip-path: polygon(0 0, 100% 0%, 100% 85%, 0 100%);
+    clip-path: polygon(0 0, 100% 0%, 100% 85%, 0 100%);
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+
+    &--1 {
+      background-image: linear-gradient(
+          to bottom right,
+          $color-secondary-dark,
+          $color-secondary-light
+        ),
+        url(../img/nat-5.jpg);
+      background-position: 50% 20%;
+    }
+
+    &--2 {
+      background-image: linear-gradient(
+          to bottom right,
+          $color-primary-light,
+          $color-primary-dark
+        ),
+        url(../img/nat-6.jpg);
+      background-position: center;
+    }
+
+    &--3 {
+      background-image: linear-gradient(
+          to bottom right,
+          $color-tertiary-light,
+          $color-tertiary-dark
+        ),
+        url(../img/nat-7.jpg);
+      background-position: center;
+    }
+  }
+  &__heading {
+    font-size: 2.5rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: $color-white;
+    text-align: right;
+    position: absolute;
+    top: 15rem;
+    right: 2rem;
+    width: 45%;
+    margin-right: 3rem;
+  }
+
+  &__heading-span {
+    padding: 1rem 1.5rem;
+    -webkit-box-decoration-break: clone;
+    box-decoration-break: clone;
+    &--1 {
+      background-image: linear-gradient(
+        to bottom right,
+        rgba($color-secondary-dark, 0.85),
+        rgba($color-secondary-light, 0.85)
+      );
+    }
+    &--2 {
+      background-image: linear-gradient(
+        to bottom right,
+        rgba($color-primary-dark, 0.85),
+        rgba($color-primary-light, 0.85)
+      );
+    }
+
+    &--3 {
+      background-image: linear-gradient(
+        to bottom right,
+        rgba($color-tertiary-light, 0.85),
+        rgba($color-tertiary-dark, 0.85)
+      );
+    }
+  }
+
+  &__details {
+    padding: 4rem 3rem;
+
+    ul {
+      list-style: none;
+      width: 90%;
+      margin: 0 auto;
+
+      li {
+        text-align: center;
+        font-size: 1.5rem;
+        padding: 1rem;
+
+        &:not(:last-child) {
+          border-bottom: 1px solid $color-grey-light-2;
+        }
+      }
+    }
+  }
+}

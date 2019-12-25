@@ -8,11 +8,17 @@
 
 @import 'components/composition';
 @import 'components/buttons';
+@import 'components/form';
+@import 'components/card';
 
 @import 'layout/grid';
 @import 'layout/header';
+@import 'layout/footer';
 
 @import 'pages/home';
 @import 'pages/footer';
 @import 'pages/navigation';
 @import 'pages/popup';
+@import 'pages/tours';
+@import 'pages/stories';
+@import 'pages/book';

@@ -40,7 +40,15 @@
     opacity: 0;
 
     transform: scale(0.5) translate(-50%, -50%);
-    transition: transform 4s 0.2s, opacity 4s 0.2s;
+    transition: transform 1s 0.2s, opacity 4s 0.2s;
+
+    @include respond(phone) {
+      width: 100%;
+    }
+
+    @include respond(tab-land) {
+      grid-template-columns: 1fr;
+    }
   }
 
   &:target {
@@ -54,12 +62,42 @@
   }
 
   &__right {
-    padding: 5rem 5rem;
+    padding: 5rem;
+
+    @include respond(tab-land) {
+      order: -1;
+      padding: 3rem 5rem;
+    }
+
+    @include respond(phone) {
+      // order: -1;
+      padding: 3rem 2.5rem;
+    }
+  }
+
+  &__left {
+    @include respond(tab-land) {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
   }
 
   &__img {
     display: block;
     width: 100%;
+
+    object-position: center;
+    object-fit: cover;
+
+    @include respond(tab-land) {
+      object-position: center;
+      object-fit: contain;
+    }
+  }
+
+  &__first {
+    object-position: center;
+    object-fit: cover;
   }
 
   &__text {
