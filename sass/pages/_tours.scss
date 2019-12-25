@@ -10,4 +10,18 @@
   @include respond(phone) {
     padding: 17rem 0 15rem 0;
   }
+
+  &__card {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 7rem;
+
+    @include respond(tab-land) {
+      grid-gap: 1rem;
+    }
+    @include respond(tab-port) {
+      grid-template-columns: 1fr;
+      grid-gap: 3rem;
+    }
+  }
 }

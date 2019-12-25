@@ -180,33 +180,6 @@ hr {
   .composition:hover .composition__photo:not(:hover) {
     transform: scale(0.9); }
 
-.book {
-  max-width: 1000px;
-  width: 100%;
-  background: linear-gradient(105deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 50%, transparent 50%), url(../img/nat-10.jpg) center/cover no-repeat;
-  height: 50rem;
-  margin: 0 auto;
-  border-radius: 3px;
-  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4); }
-  @media (max-width: 56.25em) {
-    .book {
-      background: linear-gradient(105deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 75%, transparent 75%), url(../img/nat-10.jpg) center/cover no-repeat; } }
-  .book__form {
-    width: 50%;
-    padding: 6rem; }
-    @media (max-width: 56.25em) {
-      .book__form {
-        width: 80%;
-        padding: 6rem 2rem 2rem 6rem; } }
-    .book__form h2 {
-      font-size: 3rem; }
-    .book__form .input__group:not(:last-child) {
-      margin-bottom: 2rem; }
-  .book .radio_input__group {
-    padding: 0.5rem; }
-  .book .btn {
-    display: block; }
-
 .btn, .btn:link, .btn:visited {
   text-transform: uppercase;
   text-decoration: none;
@@ -477,81 +450,6 @@ hr {
         .card__details ul li:not(:last-child) {
           border-bottom: 1px solid #eee; }
 
-.about__text {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  max-width: 100%;
-  grid-gap: 5rem;
-  text-align: left;
-  margin-left: 10rem; }
-  @media (max-width: 37.5em) {
-    .about__text {
-      margin-left: 1rem; } }
-  @media (max-width: 56.25em) {
-    .about__text--img {
-      min-height: 30rem; } }
-  @media (max-width: 37.5em) {
-    .about__text--img {
-      min-height: 10rem; } }
-  @media (max-width: 56.25em) {
-    .about__text {
-      grid-template-columns: 1fr;
-      grid-gap: 3rem; } }
-
-.feature {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  max-width: 100%;
-  grid-gap: 5rem;
-  text-align: left;
-  align-items: baseline;
-  padding: 20rem 10rem;
-  background: linear-gradient(to right bottom, rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8)), url(../img/nat-4.jpg) top/cover;
-  transform: skewY(-7deg);
-  margin-top: -9rem; }
-  @media (min-width: 90em) {
-    .feature {
-      padding: 20rem 3rem; } }
-  @media (max-width: 75em) {
-    .feature {
-      padding: 20rem 3rem;
-      grid-gap: 1rem; } }
-  @media (max-width: 56.25em) {
-    .feature {
-      grid-template-columns: 1fr;
-      grid-gap: 3rem; } }
-  @media (max-width: 37.5em) {
-    .feature {
-      padding: 10rem 0rem; } }
-  .feature__card {
-    transform: skewY(7deg);
-    background-color: rgba(255, 255, 255, 0.7);
-    text-align: center;
-    padding: 3rem;
-    border-radius: 0.5rem;
-    transition: transform 0.3s;
-    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
-    min-width: 18rem;
-    width: 100%; }
-    @media (min-width: 90em) {
-      .feature__card {
-        max-width: 40rem; } }
-    .feature__card:hover {
-      transform: translateY(-1.5rem) scale(1.03) skewY(7deg);
-      box-shadow: 0 1.5rem 2rem rgba(0, 0, 0, 0.3); }
-
-.tours__card {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 7rem; }
-  @media (max-width: 75em) {
-    .tours__card {
-      grid-gap: 1rem; } }
-  @media (max-width: 56.25em) {
-    .tours__card {
-      grid-template-columns: 1fr;
-      grid-gap: 3rem; } }
-
 .header {
   height: 95vh;
   background: linear-gradient(to right bottom, rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8)), url(../img/hero.jpg) top/cover;
@@ -619,18 +517,6 @@ hr {
     .footer-list__link:hover, .footer-list__link:active {
       color: #55c57a;
       box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.4); }
-
-.about {
-  background-color: #f7f7f7;
-  padding: 25rem 3rem;
-  margin-top: -20vh;
-  text-align: center; }
-  @media (max-width: 56.25em) {
-    .about {
-      padding: 22rem 3rem; } }
-  @media (max-width: 37.5em) {
-    .about {
-      padding: 21rem 3rem; } }
 
 .navigation__checkbox {
   display: none; }
@@ -824,6 +710,38 @@ hr {
     column-rule: 1px solid #eee;
     hyphens: auto; }
 
+.about {
+  background-color: #f7f7f7;
+  padding: 25rem 3rem;
+  margin-top: -20vh;
+  text-align: center; }
+  @media (max-width: 56.25em) {
+    .about {
+      padding: 22rem 3rem; } }
+  @media (max-width: 37.5em) {
+    .about {
+      padding: 21rem 3rem; } }
+  .about__text {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 100%;
+    grid-gap: 5rem;
+    text-align: left;
+    margin-left: 10rem; }
+    @media (max-width: 37.5em) {
+      .about__text {
+        margin-left: 1rem; } }
+    @media (max-width: 56.25em) {
+      .about__text--img {
+        min-height: 30rem; } }
+    @media (max-width: 37.5em) {
+      .about__text--img {
+        min-height: 10rem; } }
+    @media (max-width: 56.25em) {
+      .about__text {
+        grid-template-columns: 1fr;
+        grid-gap: 3rem; } }
+
 .tours {
   background-color: #f7f7f7;
   padding: 25rem 3rem 15rem 3rem;
@@ -835,6 +753,17 @@ hr {
   @media (max-width: 37.5em) {
     .tours {
       padding: 17rem 0 15rem 0; } }
+  .tours__card {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 7rem; }
+    @media (max-width: 75em) {
+      .tours__card {
+        grid-gap: 1rem; } }
+    @media (max-width: 56.25em) {
+      .tours__card {
+        grid-template-columns: 1fr;
+        grid-gap: 3rem; } }
 
 .stories {
   text-align: center;
@@ -943,3 +872,45 @@ hr {
     padding: 0.5rem; }
   .book .btn {
     display: block; }
+
+.feature {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  max-width: 100%;
+  grid-gap: 5rem;
+  text-align: left;
+  align-items: baseline;
+  padding: 20rem 10rem;
+  background: linear-gradient(to right bottom, rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8)), url(../img/nat-4.jpg) top/cover;
+  transform: skewY(-7deg);
+  margin-top: -9rem; }
+  @media (min-width: 90em) {
+    .feature {
+      padding: 20rem 3rem; } }
+  @media (max-width: 75em) {
+    .feature {
+      padding: 20rem 3rem;
+      grid-gap: 1rem; } }
+  @media (max-width: 56.25em) {
+    .feature {
+      grid-template-columns: 1fr;
+      grid-gap: 3rem; } }
+  @media (max-width: 37.5em) {
+    .feature {
+      padding: 10rem 0rem; } }
+  .feature__card {
+    transform: skewY(7deg);
+    background-color: rgba(255, 255, 255, 0.7);
+    text-align: center;
+    padding: 3rem;
+    border-radius: 0.5rem;
+    transition: transform 0.3s;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+    min-width: 18rem;
+    width: 100%; }
+    @media (min-width: 90em) {
+      .feature__card {
+        max-width: 40rem; } }
+    .feature__card:hover {
+      transform: translateY(-1.5rem) scale(1.03) skewY(7deg);
+      box-shadow: 0 1.5rem 2rem rgba(0, 0, 0, 0.3); }

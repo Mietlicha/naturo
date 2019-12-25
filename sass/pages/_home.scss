@@ -11,4 +11,32 @@
   @include respond(phone) {
     padding: 21rem 3rem;
   }
+
+  &__text {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 100%;
+    grid-gap: 5rem;
+    text-align: left;
+    margin-left: 10rem;
+
+    @include respond(phone) {
+      margin-left: 1rem;
+    }
+
+    &--img {
+      @include respond(tab-port) {
+        min-height: 30rem;
+      }
+
+      @include respond(phone) {
+        min-height: 10rem;
+      }
+    }
+
+    @include respond(tab-port) {
+      grid-template-columns: 1fr;
+      grid-gap: 3rem;
+    }
+  }
 }
