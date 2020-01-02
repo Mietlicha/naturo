@@ -40,13 +40,13 @@
 
 html {
   font-size: 62.5%; }
-  @media (max-width: 75em) {
+  @media only screen and (max-width: 75em) {
     html {
       font-size: 56.25%; } }
-  @media (max-width: 56.25em) {
+  @media only screen and (max-width: 56.25em) {
     html {
       font-size: 50%; } }
-  @media (min-width: 90em) {
+  @media only screen and (min-width: 90em) {
     html {
       font-size: 75%; } }
 
@@ -57,7 +57,7 @@ body {
   font-weight: 400;
   line-height: 1.7;
   color: #777; }
-  @media (max-width: 56.25em) {
+  @media only screen and (max-width: 56.25em) {
     body {
       padding: 0; } }
 
@@ -82,7 +82,7 @@ body {
     font-size: 6rem;
     letter-spacing: 3.5rem;
     animation: moveLeft 1s ease-in-out; }
-    @media (max-width: 37.5em) {
+    @media only screen and (max-width: 37.5em) {
       .header__text--main span:nth-child(1) {
         letter-spacing: 1rem;
         font-size: 5rem; } }
@@ -91,7 +91,7 @@ body {
     letter-spacing: 1.7rem;
     font-weight: 700;
     animation: moveRight 1s ease-in-out; }
-    @media (max-width: 37.5em) {
+    @media only screen and (max-width: 37.5em) {
       .header__text--main span:nth-child(2) {
         letter-spacing: 0.5rem; } }
 
@@ -106,10 +106,10 @@ body {
   color: transparent;
   letter-spacing: 0.2rem;
   transition: transform 0.2s; }
-  @media (max-width: 56.25em) {
+  @media only screen and (max-width: 56.25em) {
     .heading__primary {
       font-size: 2.1rem; } }
-  @media (max-width: 37.5em) {
+  @media only screen and (max-width: 37.5em) {
     .heading__primary {
       font-size: 1.7rem; } }
   .heading__primary:hover {
@@ -129,7 +129,7 @@ body {
 
 .heading {
   margin-bottom: 8rem; }
-  @media (max-width: 37.5em) {
+  @media only screen and (max-width: 37.5em) {
     .heading {
       margin-bottom: 3rem; } }
 
@@ -164,14 +164,14 @@ hr {
     .composition__photo--p2 {
       top: 2rem;
       left: 40%; }
-      @media (max-width: 37.5em) {
+      @media only screen and (max-width: 37.5em) {
         .composition__photo--p2 {
           top: 0;
           left: 60%; } }
     .composition__photo--p3 {
       top: 8rem;
       left: 20%; }
-      @media (max-width: 37.5em) {
+      @media only screen and (max-width: 37.5em) {
         .composition__photo--p3 {
           top: 2rem;
           left: 30%; } }
@@ -245,7 +245,7 @@ hr {
 .btn-text:hover {
   background-color: #55c57a;
   color: #fff;
-  box-shadow: 0 1rem 2 rem rgba(0, 0, 0, 0.15);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
   transform: translateY(-2px); }
 
 .btn-text:active {
@@ -331,7 +331,7 @@ hr {
     left: 50%;
     transform: translate(-50%, -50%);
     opacity: 0;
-    transition: opcity 0.2s; }
+    transition: all 0.2s; }
 
 .form__radio-input:checked ~ .form__radio-label .form__radio-button::after {
   opacity: 1; }
@@ -342,7 +342,7 @@ hr {
   text-align: left;
   position: relative;
   height: 55rem; }
-  @media (max-width: 75em) {
+  @media only screen and (max-width: 75em) {
     .card {
       height: 50rem;
       margin-bottom: 20rem; } }
@@ -357,12 +357,12 @@ hr {
     border-radius: 3px;
     box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4);
     overflow: hidden; }
-    @media (max-width: 75em) {
+    @media only screen and (max-width: 75em) {
       .card__side {
         position: static; } }
     .card__side--front {
       background-color: #fff; }
-      @media (max-width: 75em) {
+      @media only screen and (max-width: 75em) {
         .card__side--front {
           height: 50rem;
           position: static; } }
@@ -371,7 +371,7 @@ hr {
       text-transform: uppercase;
       color: #fff;
       text-align: center; }
-      @media (max-width: 75em) {
+      @media only screen and (max-width: 75em) {
         .card__side--back {
           transform: rotateY(0);
           height: 20rem; } }
@@ -386,7 +386,7 @@ hr {
           font-size: 6rem;
           font-weight: 100;
           margin-bottom: 6rem; }
-          @media (max-width: 75em) {
+          @media only screen and (max-width: 75em) {
             .card__side--back-text p:nth-child(2) {
               font-size: 4rem;
               margin-bottom: 1.7rem; } }
@@ -398,7 +398,7 @@ hr {
         background: linear-gradient(to bottom right, #5643fa, #2998ff); }
   .card:hover .card__side--front {
     transform: rotateY(180deg); }
-    @media (max-width: 75em) {
+    @media only screen and (max-width: 75em) {
       .card:hover .card__side--front {
         transform: rotateY(0); } }
   .card:hover .card__side--back {
@@ -459,7 +459,7 @@ hr {
   background: linear-gradient(to right bottom, rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8)), url(../img/hero.jpg) top/cover;
   clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
   position: relative; }
-  @media (max-width: 37.5em) {
+  @media only screen and (max-width: 37.5em) {
     .header {
       clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
       position: relative; } }
@@ -474,7 +474,7 @@ hr {
   background-color: #333;
   padding: 10rem 0;
   font-size: 1.4rem; }
-  @media (max-width: 37.5em) {
+  @media only screen and (max-width: 37.5em) {
     .footer {
       display: grid;
       grid-template-columns: 1fr;
@@ -485,13 +485,13 @@ hr {
   .footer__logo {
     width: 15rem;
     height: auto; }
-    @media (max-width: 37.5em) {
+    @media only screen and (max-width: 37.5em) {
       .footer__logo {
         width: 10rem; } }
   .footer__item {
     display: grid;
     grid-template-columns: 1fr 1fr; }
-    @media (max-width: 56.25em) {
+    @media only screen and (max-width: 56.25em) {
       .footer__item {
         grid-template-columns: 1fr;
         text-align: center; } }
@@ -499,7 +499,7 @@ hr {
     .footer__item .footer__copyright {
       padding: 2rem 6rem;
       color: #f7f7f7; }
-      @media (max-width: 37.5em) {
+      @media only screen and (max-width: 37.5em) {
         .footer__item .footer__item-navigation,
         .footer__item .footer__copyright {
           padding: 2rem 1rem; } }
@@ -511,7 +511,7 @@ hr {
     .footer-list__item:not(:last-child) {
       padding-right: 3rem;
       min-width: 12rem; }
-      @media (max-width: 37.5em) {
+      @media only screen and (max-width: 37.5em) {
         .footer-list__item:not(:last-child) {
           min-width: 1rem; } }
     .footer-list__link, .footer-list__link:visited, .footer-list__link:link {
@@ -670,10 +670,10 @@ hr {
     opacity: 0;
     transform: scale(0.5) translate(-50%, -50%);
     transition: transform 1s 0.2s, opacity 4s 0.2s; }
-    @media (max-width: 37.5em) {
+    @media only screen and (max-width: 37.5em) {
       .popup__content {
         width: 100%; } }
-    @media (max-width: 75em) {
+    @media only screen and (max-width: 75em) {
       .popup__content {
         grid-template-columns: 1fr; } }
   .popup:target {
@@ -684,14 +684,14 @@ hr {
     transform: scale(1) translate(-50%, -50%); }
   .popup__right {
     padding: 5rem; }
-    @media (max-width: 75em) {
+    @media only screen and (max-width: 75em) {
       .popup__right {
         order: -1;
         padding: 3rem 5rem; } }
-    @media (max-width: 37.5em) {
+    @media only screen and (max-width: 37.5em) {
       .popup__right {
         padding: 3rem 2.5rem; } }
-  @media (max-width: 75em) {
+  @media only screen and (max-width: 75em) {
     .popup__left {
       display: grid;
       grid-template-columns: 1fr 1fr; } }
@@ -700,7 +700,7 @@ hr {
     width: 100%;
     object-position: center;
     object-fit: cover; }
-    @media (max-width: 75em) {
+    @media only screen and (max-width: 75em) {
       .popup__img {
         object-position: center;
         object-fit: contain; } }
@@ -719,10 +719,10 @@ hr {
   padding: 25rem 3rem;
   margin-top: -20vh;
   text-align: center; }
-  @media (max-width: 56.25em) {
+  @media only screen and (max-width: 56.25em) {
     .about {
       padding: 22rem 3rem; } }
-  @media (max-width: 37.5em) {
+  @media only screen and (max-width: 37.5em) {
     .about {
       padding: 21rem 3rem; } }
   .about__text {
@@ -732,16 +732,16 @@ hr {
     grid-gap: 5rem;
     text-align: left;
     margin-left: 10rem; }
-    @media (max-width: 37.5em) {
+    @media only screen and (max-width: 37.5em) {
       .about__text {
         margin-left: 1rem; } }
-    @media (max-width: 56.25em) {
+    @media only screen and (max-width: 56.25em) {
       .about__text--img {
         min-height: 30rem; } }
-    @media (max-width: 37.5em) {
+    @media only screen and (max-width: 37.5em) {
       .about__text--img {
         min-height: 10rem; } }
-    @media (max-width: 56.25em) {
+    @media only screen and (max-width: 56.25em) {
       .about__text {
         grid-template-columns: 1fr;
         grid-gap: 3rem; } }
@@ -751,20 +751,20 @@ hr {
   padding: 25rem 3rem 15rem 3rem;
   margin-top: -9rem;
   text-align: center; }
-  @media (max-width: 75em) {
+  @media only screen and (max-width: 75em) {
     .tours {
       padding: 25rem 0 15rem 0; } }
-  @media (max-width: 37.5em) {
+  @media only screen and (max-width: 37.5em) {
     .tours {
       padding: 17rem 0 15rem 0; } }
   .tours__card {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 7rem; }
-    @media (max-width: 75em) {
+    @media only screen and (max-width: 75em) {
       .tours__card {
         grid-gap: 1rem; } }
-    @media (max-width: 56.25em) {
+    @media only screen and (max-width: 56.25em) {
       .tours__card {
         grid-template-columns: 1fr;
         grid-gap: 3rem; } }
@@ -773,7 +773,7 @@ hr {
   text-align: center;
   padding: 6rem;
   position: relative; }
-  @media (max-width: 37.5em) {
+  @media only screen and (max-width: 37.5em) {
     .stories {
       padding: 6rem 0; } }
   .stories__story {
@@ -789,14 +789,14 @@ hr {
     transform: skewX(-12deg);
     backface-visibility: hidden;
     margin-bottom: 8rem; }
-    @media (max-width: 37.5em) {
+    @media only screen and (max-width: 37.5em) {
       .stories__story {
         width: 100%;
         transform: skewX(0deg);
         margin-bottom: 2rem; } }
     .stories__story > * {
       transform: skewX(12deg); }
-      @media (max-width: 37.5em) {
+      @media only screen and (max-width: 37.5em) {
         .stories__story > * {
           transform: skewX(0deg); } }
     .stories__story--text {
@@ -810,7 +810,7 @@ hr {
         margin-right: 3rem;
         position: relative;
         overflow: hidden; }
-        @media (max-width: 37.5em) {
+        @media only screen and (max-width: 37.5em) {
           .stories__story--text .circle {
             width: 100%;
             border-radius: 3px;
@@ -821,7 +821,7 @@ hr {
           object-fit: cover;
           border-radius: 50%;
           transition: transform 0.5s; }
-          @media (max-width: 37.5em) {
+          @media only screen and (max-width: 37.5em) {
             .stories__story--text .circle img {
               border-radius: 3px;
               padding-bottom: 2rem;
@@ -846,7 +846,7 @@ hr {
 .booking-section {
   padding: 15rem;
   background: linear-gradient(to right bottom, #7ed56f, #28b485); }
-  @media (max-width: 56.25em) {
+  @media only screen and (max-width: 56.25em) {
     .booking-section {
       padding: 0; } }
 
@@ -858,13 +858,13 @@ hr {
   margin: 0 auto;
   border-radius: 3px;
   box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4); }
-  @media (max-width: 56.25em) {
+  @media only screen and (max-width: 56.25em) {
     .book {
       background: linear-gradient(105deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 75%, transparent 75%), url(../img/nat-10.jpg) center/cover no-repeat; } }
   .book__form {
     width: 50%;
     padding: 6rem; }
-    @media (max-width: 56.25em) {
+    @media only screen and (max-width: 56.25em) {
       .book__form {
         width: 80%;
         padding: 6rem 2rem 2rem 6rem; } }
@@ -888,18 +888,18 @@ hr {
   background: linear-gradient(to right bottom, rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8)), url(../img/nat-4.jpg) top/cover;
   transform: skewY(-7deg);
   margin-top: -9rem; }
-  @media (min-width: 90em) {
+  @media only screen and (min-width: 90em) {
     .feature {
       padding: 20rem 3rem; } }
-  @media (max-width: 75em) {
+  @media only screen and (max-width: 75em) {
     .feature {
       padding: 20rem 3rem;
       grid-gap: 1rem; } }
-  @media (max-width: 56.25em) {
+  @media only screen and (max-width: 56.25em) {
     .feature {
       grid-template-columns: 1fr;
       grid-gap: 3rem; } }
-  @media (max-width: 37.5em) {
+  @media only screen and (max-width: 37.5em) {
     .feature {
       padding: 10rem 0rem; } }
   .feature__card {
@@ -912,7 +912,7 @@ hr {
     box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
     min-width: 18rem;
     width: 100%; }
-    @media (min-width: 90em) {
+    @media only screen and (min-width: 90em) {
       .feature__card {
         max-width: 40rem; } }
     .feature__card:hover {
