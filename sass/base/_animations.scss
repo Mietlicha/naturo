@@ -42,3 +42,18 @@
     transform: translateX(0);
   }
 }
+
+@keyframes arrow {
+  0% {
+    transform: translateY(-0.7rem);
+  }
+  30% {
+    transform: translateY(0.5rem);
+  }
+  60% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}

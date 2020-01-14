@@ -51,9 +51,9 @@
 
         @include respond(phone) {
           width: 100%;
-          // height: auto;
           border-radius: 3px;
           shape-outside: none;
+          float: none;
         }
 
         img {
@@ -66,7 +66,6 @@
           @include respond(phone) {
             border-radius: 3px;
             padding-bottom: 2rem;
-            object-position: 0 42%;
           }
         }
         &__paragraph {
@@ -79,6 +78,10 @@
           text-transform: uppercase;
           opacity: 0;
           transition: transform 0.5s, opacity 0.5s;
+
+          @include respond(phone) {
+            display: none;
+          }
         }
       }
     }

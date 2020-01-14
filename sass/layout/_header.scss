@@ -6,7 +6,7 @@
       rgba(#28b485, 0.8)
     ),
     url(../img/hero.jpg) top/cover;
-  clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 75vh, 30% 100%, 0 90%);
   position: relative;
 
   @include respond(phone) {
@@ -21,6 +21,25 @@
 
     img {
       height: 3.5rem;
+    }
+  }
+
+  .arrow {
+    width: 5rem;
+    height: 5rem;
+    // background: black;
+    position: absolute;
+    bottom: 2rem;
+    left: 28%;
+    z-index: 1;
+
+    @include respond(phone) {
+      display: none;
+    }
+
+    .fa {
+      color: rgba($color-grey-light-1, 0.6);
+      animation: arrow 3s 1s infinite alternate both;
     }
   }
 }
