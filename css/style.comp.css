@@ -485,7 +485,8 @@ hr {
     position: absolute;
     bottom: 2rem;
     left: 28%;
-    z-index: 1; }
+    z-index: 1;
+    transition: opacity 0.5s ease-in-out; }
     @media only screen and (max-width: 37.5em) {
       .header .arrow {
         display: none; } }
@@ -740,12 +741,12 @@ hr {
 
 .about {
   background-color: #f7f7f7;
-  padding: 25rem 3rem;
+  padding: 32rem 3rem;
   margin-top: -20vh;
   text-align: center; }
   @media only screen and (max-width: 56.25em) {
     .about {
-      padding: 22rem 3rem; } }
+      padding: 28rem 3rem; } }
   @media only screen and (max-width: 37.5em) {
     .about {
       padding: 21rem 3rem; } }
