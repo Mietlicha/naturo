@@ -5,7 +5,7 @@
   text-align: center;
 
   @include respond(tab-port) {
-    padding: 22rem 3rem;
+    padding: 28rem 3rem;
   }
 
   @include respond(phone) {
